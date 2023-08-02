@@ -1,8 +1,28 @@
+@use "sass:map";
+
+// general sizes
 $sizes: (
   8: 0.5rem,
   12: 0.75rem,
   16: 1rem,
   20: 1.25rem,
+  24: 1.5rem,
   32: 2rem,
   36: 2.25rem
 );
+
+// padding
+$hero-padding: 20rem;
+$section-padding: 7rem;
+$card-body-padding: 5rem;
+
+// gap
+$grid-default-gap: map.get($sizes, 32);
+$flex-group-default-gap: map.get($sizes, 16);
+$hero-button-gap: 1rem;
+$section-inline-gap: 3rem;
+
+// container
+$container-max-width: 77.75rem;
+$container-max-width-wide: 100rem;
+$container-min-width: 20rem;
