@@ -1,0 +1,25 @@
+@use "../abstracts/" as *;
+
+.section-heading {
+  // we may increase something like .section-heading__title for other situations.
+  &[data-decoration="true"]::after {
+    content: "";
+    display: block;
+    width: 10rem;
+    height: 1px;
+    margin-block-start: size(36);
+    background-color: currentColor;
+
+    .text-center & {
+      margin-inline: auto;
+    }
+  }
+
+  &:has(p) {
+    margin-block-end: size(28);
+  }
+
+  &:not(:has(p)) {
+    margin-block-end: 4.125rem;
+  }
+}

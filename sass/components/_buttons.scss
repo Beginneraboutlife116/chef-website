@@ -1,0 +1,26 @@
+@use "../abstracts/" as *;
+
+.button {
+  display: inline-flex;
+  cursor: pointer;
+  text-decoration: none; // for a-link element
+  // text-transform: uppercase; // I don't think we need this, because we can use .text-uppercase. Not every button needs to be uppercase.
+  line-height: 1.6;
+  border: 0;
+
+  padding: 1.125em 2.25em;
+
+  &[data-type="accent"] {
+    background-color: clr(primary, 400);
+    color: clr(neutral, 900);
+  }
+
+  &[data-type="outline"] {
+    --outline-size: 5px;
+
+    background-color: transparent;
+    color: clr(neutral, 100);
+    outline: var(--outline-size) solid clr(neutral, 100);
+    outline-offset: calc(var(--outline-size) * -1);
+  }
+}

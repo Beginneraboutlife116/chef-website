@@ -10,9 +10,10 @@ $font-sizes: (
   700: 2rem,
   600: 1.6875rem,
   500: 1.3125rem,
-  400: 1.125rem, // set on the body
+  400: 1.125rem,
+  // set on the body
   300: 1rem
 );
 
-$fw-400: 400;
-$fw-700: 700;
+$fw-regular: 400;
+$fw-bold: 700;
