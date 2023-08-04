@@ -1,6 +1,6 @@
 @use "../abstracts/" as *;
 
-.section-heading {
+.section-header {
   // we may increase something like .section-heading__title for other situations.
   &[data-decoration="true"]::after {
     content: "";
