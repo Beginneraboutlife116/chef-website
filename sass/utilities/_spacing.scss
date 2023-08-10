@@ -2,10 +2,10 @@
 
 .section {
   padding-block: $section-padding;
-}
 
-.hero {
-  padding-block: $hero-padding;
+  &[data-section="hero"] {
+    padding-block: $hero-padding;
+  }
 }
 
 .mx-auto {

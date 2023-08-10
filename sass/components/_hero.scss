@@ -1,0 +1,11 @@
+.hero {
+  // The sequence is for purpose.
+  // The first order is for the default image.
+  background-image: url("../../assets/images/hero-bg.jpg");
+  background-image: image-set(
+    url("../../assets/images/hero-bg.avif") type("image/avif"),
+    url("../../assets/images/hero-bg.webp") type("image/webp")
+  );
+  background-size: cover;
+  background-position: center;
+}
