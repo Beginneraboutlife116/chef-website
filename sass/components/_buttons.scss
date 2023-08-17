@@ -5,10 +5,11 @@
   cursor: pointer;
   text-decoration: none; // for a-link element
   // text-transform: uppercase; // I don't think we need this, because we can use .text-uppercase. Not every button needs to be uppercase.
-  line-height: 1.6;
+  line-height: 1;
   border: 0;
-
+  font-weight: $fw-bold;
   padding: 1.125em 2.25em;
+  transition: 275ms ease;
 
   &[data-type="accent"] {
     background-color: clr(primary, 400);
@@ -22,5 +23,10 @@
     color: clr(neutral, 100);
     outline: var(--outline-size) solid clr(neutral, 100);
     outline-offset: calc(var(--outline-size) * -1);
+  }
+
+  &:is(:hover, :focus) {
+    background-color: clr(neutral, 100);
+    color: clr(neutral, 900);
   }
 }

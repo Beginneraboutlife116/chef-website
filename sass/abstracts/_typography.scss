@@ -5,10 +5,10 @@ $ff-base: $ff-sans;
 $ff-accent: $ff-serif;
 
 $font-sizes: (
-  900: 5rem,
-  800: 3.75rem,
-  700: 2rem,
-  600: 1.6875rem,
+  900: clamp(2.5rem, calc(1.59rem + 4.55vw), 5rem),
+  800: clamp(2.25rem, calc(1.7rem + 2.725vw), 3.75rem),
+  700: clamp(1.5rem, calc(1.32rem + 0.91vw), 2rem),
+  600: clamp(1.4rem, calc(1.3rem + 0.52vw), 1.69rem),
   500: 1.3125rem,
   400: 1.125rem,
   // set on the body

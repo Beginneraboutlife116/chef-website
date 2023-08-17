@@ -1,0 +1,7 @@
+@use '../abstracts/' as *;
+
+.shift {
+  &-up {
+    translate: 0% calc($section-padding * -1.57);
+  }
+}
